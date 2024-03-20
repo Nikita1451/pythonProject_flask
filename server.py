@@ -9,6 +9,9 @@ app = Flask(__name__)
 def index():
     return "Привет от приложения Flask"
 
+@app.route("/f")
+def indedx():
+    return "Привет от приложения Flask"
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
